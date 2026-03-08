@@ -38,3 +38,34 @@ Implementar um bloco nativo para o editor de blocos:
 - O bloco deve permitir inserir, em qualquer post, uma listagem de posts ordenados por pontuação.
 - A ordenação deve refletir os dados persistidos pelo sistema de votação.
 - A definição da estrutura visual e possíveis configurações do bloco fica a critério do candidato.
+
+# ----------------
+
+# SOLUÇÃO APLICADA 
+
+## Criação de um plugin específico para o sistema de votação em cada post
+### o plugin tem a funcionalidade de adicionar um sistema de votação que consiste em dois botões de Like e Dislike.
+### Após ativado o script do plugin irá exibir dos botões de 
+
+### INSTALAÇÃO: https://jam.dev/c/1e39d5ce-65e6-482c-9138-d9108ec7995e
+### VALIDAÇÃO DE LIKES EM: https://jam.dev/c/585e9df1-5c0a-4e0f-b5f6-77edab82cf53
+### VALIDAÇÃO DE RANKING EM: https://jam.dev/c/49b794b5-b8ee-4419-9964-ee7bdc2d3411
+
+# INSTALACÃO
+
+## Para instalar o plugin, necessário seguir os passos abaixo:
+### - Para instalar o plugin em outros sistemas WP, será necessário zipar o arquivo wp-likes-plugin.php no formato .ZIP
+### - Ao acessar o painel de ADM do WP vá em Plugin > Adicionar novo > Enviar plugin e faça upload do arquivo .zip clique em > INSTALAR AGORA e depois > ATIVAR PLUGIN
+
+
+# FUNCIONALIDADES
+
+### Botoes de Like e Dislike que são add diretamente nos posts, 
+### A votação é via Ajax para que seja transparente ao usuario,
+### Função Toggle (para dar e remover likes ao clicar no oposto), 
+### Controle via cookie por visitante, 
+### A persistencia dos dados foram realizados na tabela tabela wp_postmeta com a função post_meta,  
+### Ranking dentro do Editor, bloco gutenberg.
+
+
+
